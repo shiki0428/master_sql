@@ -73,3 +73,8 @@ GROUP BY P1.name
 ORDER BY rank_1;
 
 
+select p1.name as name_1,
+	   p2.name as name_2
+	from products p1
+	inner join products p2
+		on p1.name >= p2.name
